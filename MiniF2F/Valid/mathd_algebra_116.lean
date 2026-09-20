@@ -5,4 +5,8 @@ set_option maxHeartbeats 0
 open BigOperators Real Nat Topology Rat
 
 theorem mathd_algebra_116 (k x : ℝ) (h₀ : x = (13 - Real.sqrt 131) / 4)
-    (h₁ : 2 * x ^ 2 - 13 * x + k = 0) : k = 19 / 4 := by sorry
+    (h₁ : 2 * x ^ 2 - 13 * x + k = 0) : k = 19 / 4 := by
+    rw[h₀] at h₁
+    ring_nf at h₁
+    norm_num at h₁
+    linarith
