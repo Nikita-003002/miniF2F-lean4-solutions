@@ -5,4 +5,6 @@ set_option maxHeartbeats 0
 open BigOperators Real Nat Topology Rat
 
 theorem mathd_numbertheory_35 (S : Finset ℕ) (h₀ : ∀ n : ℕ, n ∈ S ↔ n ∣ Nat.sqrt 196) :
-    (∑ k ∈ S, k) = 24 := by sorry
+    (∑ k ∈ S, k) = 24 := by
+rw[show S = Nat.divisors 14 by ext x; rw[h₀]; norm_num]
+decide
