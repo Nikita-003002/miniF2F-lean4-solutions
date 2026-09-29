@@ -21,4 +21,6 @@ theorem aime_1984_p15 (x y z w : ℝ)
       x ^ 2 / (8 ^ 2 - 1) + y ^ 2 / (8 ^ 2 - 3 ^ 2) + z ^ 2 / (8 ^ 2 - 5 ^ 2) +
           w ^ 2 / (8 ^ 2 - 7 ^ 2) =
         1) :
-    x ^ 2 + y ^ 2 + z ^ 2 + w ^ 2 = 36 := by sorry
+    x ^ 2 + y ^ 2 + z ^ 2 + w ^ 2 = 36 := by
+    norm_num at h₀ h₁ h₂ h₃
+    linarith
