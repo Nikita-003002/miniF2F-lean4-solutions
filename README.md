@@ -1,7 +1,8 @@
-# miniF2F-lean4
+# miniF2F-lean4-solutions
 
-⚠️ This repo is NOT maintained regularly. Use your own discretion.
+> **Credit:** This repository is a personal practice clone of the [miniF2F-lean4 benchmark by yangky11 and contributors](https://github.com/yangky11/miniF2F-lean4). 
 
+This repository contains my ongoing, in-progress solutions to the miniF2F benchmark. The original framework provides Olympiad-level math problems with `sorry` placeholders, and I am actively working through replacing them with valid Lean 4 proofs. Note that only a few proofs are completed so far.
 
 ## Building
 
