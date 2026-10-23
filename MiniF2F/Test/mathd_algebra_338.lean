@@ -9,4 +9,11 @@ theorem mathd_algebra_338
   (h₀ : 3 * a + b + c = -3)
   (h₁ : a + 3 * b + c = 9)
   (h₂ : a + b + 3 * c = 19) :
-  a * b * c = -56 := by sorry
+  a * b * c = -56 := by
+  have ha : a = -4 := by linarith
+  have hb : b = 2 := by linarith
+  have hc : c = 7 := by linarith
+  rw [ha, hb, hc]
+  norm_num
+
+-- Completion time : 15.03 mins
